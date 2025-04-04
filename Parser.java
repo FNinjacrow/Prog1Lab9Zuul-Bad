@@ -30,6 +30,11 @@ public class Parser
         reader = new Scanner(System.in);
     }
 
+    public String showAllCommands() 
+    {
+        return commands.showAll();
+    }
+    
     /**
      * @return The next command from the user.
      */
@@ -39,7 +44,7 @@ public class Parser
         String word1 = null;
         String word2 = null;
 
-        System.out.print("> ");     // print prompt
+        System.out.print("  ");     // print prompt
 
         inputLine = reader.nextLine();
 
